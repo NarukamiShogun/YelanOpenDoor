@@ -1,0 +1,214 @@
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url(https://themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.ttf) format('truetype');
+}
+
+text#al {
+	position: absolute;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 0px;
+	animation-delay: 3s;
+	animation-duration: 1s;
+	animation-name: alfuck;
+	animation-fill-mode: forwards;
+}
+
+text#ye {
+	position: absolute;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 0px;
+	animation-delay: 7.5s;
+	animation-duration: 1s;
+	animation-name: yelanlove;
+	animation-fill-mode: forwards;
+}
+
+@keyframes alfuck {
+	from {
+		font-size: 50px;
+		margin-top: 100px;
+		margin-left: -100px;
+	}
+	99.99% {
+		font-size: 50px
+	}
+	to {
+		margin-left: 700px;
+		margin-top: 100px;
+		font-size: 0px;
+	}
+}
+
+@keyframes yelanlove {
+	from {
+		font-size: 50px;
+		margin-top: 100px;
+		margin-left: -100px;
+	}
+	99.99% {
+		font-size: 50px
+	}
+	to {
+		margin-left: 700px;
+		font-size: 50px;
+		margin-top: 100px;
+		font-size: 0px;
+	}
+}
+
+body {
+	overflow: hidden;
+}
+
+#alhaitham {
+	width: 200px;
+	height: 200px;
+	left: 0px;
+	position: absolute;
+	animation-name: alhaitham, yelan, change;
+	animation-delay: 0s, 3s, 8s;
+	animation-duration: 3s, 5s, 5s;
+	animation-fill-mode: forwards;
+	top: 100px;
+}
+
+@keyframes alhaitham {
+	from {
+	}
+	10% {
+		transform: rotateZ(30deg);
+		left: 30px;
+	}
+	20% {
+		transform: rotateZ(-30deg);
+		left: 60px;
+	}
+	30% {
+		transform: rotateZ(30deg);
+		left: 90px;
+	}
+	40% {
+		transform: rotateZ(-30deg);
+		left: 120px;
+	}
+	50% {
+		transform: rotateZ(30deg);
+		left: 150px;
+	}
+	60% {
+		transform: rotateZ(-30deg);
+		left: 180px;
+	}
+	70% {
+		transform: rotateZ(30deg);
+		left: 210px;
+	}
+	80% {
+		transform: rotateZ(-30deg);
+		left: 240px;
+	}
+	90% {
+		transform: rotateZ(30deg);
+		left: 270px;
+	}
+	to {
+		left: 300px;
+	}
+}
+
+@keyframes yelan {
+	from {left: 300px;}
+	10% {
+		top: 30px;
+		left: 300px;
+	}
+	20% {
+		left: 300px;
+	}
+	30% {
+		left: 300px;
+		top: 100px;
+	}
+	31% {
+		left: 290px;
+	}
+	32% {
+		left: 310px;
+	}
+	33% {
+		left: 290px;
+	}
+	34% {
+		left: 310px;
+	}
+	35% {
+		left: 290px;
+	}
+	36% {
+		left: 310px;
+	}
+	37% {
+		left: 290px;
+	}
+	38% {
+		left: 310px;
+	}
+	39% {
+		left: 290px;
+	}
+	40% {
+		left: 310px;
+		height: 200px;
+	}
+	50% {
+		height: 160px;
+	}
+	60% {
+		height: 120px;
+	}
+	70% {
+		height: 80px;
+	}
+	80% {
+		height: 40px;
+	}
+	90% {
+		height: 0px;
+	}
+	to {
+		height: 0px;
+		left: 310px;
+	}	
+}
+
+@keyframes change {
+	from {
+		content: url("./Yelan.png");
+		height: 40px;
+	}
+	10% {
+		height: 80px;
+	}
+	20% {
+		height: 120px;
+	}
+	30% {
+		height: 160px;
+	}
+	40% {
+		height: 200px;
+		top: 100px;
+	}
+	50% {
+		top: 30px;
+	}
+	70% {
+		top: 100px;
+	}
+	to {
+		content: url("./Yelan.png");
+		height: 200px;
+	}	
+}
